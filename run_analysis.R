@@ -1,15 +1,5 @@
 ## run_analysis.R
 
-## download and extract the content of the file with data
-temp <- tempfile()
-download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",temp)
-unzip(temp,exdir=tempdir())
-unlink(temp)
-
-curDir<-getwd()   # save location of the working directory the script was launched from
-setwd(tempdir())
-
-
 ## read data
 setwd("UCI HAR Dataset/")
 
@@ -38,9 +28,7 @@ names(y_test)<-"labels"
 subject_test<-read.table("subject_test.txt")
 names(subject_test)<-"subjects"
 
-setwd(curDir)
-
-
+setwd("../../")
 ## Extract only the measurements on the mean and standard deviation for each measurement
 means_and_std_colnames<-colnames(X_test)[indices_of_means_and_stds]
 X_test_subset<-cbind(subject_test,y_test,subset(X_test,select=means_and_std_colnames))
