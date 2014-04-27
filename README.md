@@ -15,6 +15,6 @@ Script does the following:
 This script assumes the Samsung data is extracted in your working directory (so tere's a folder called UCI HAR Dataset/). Only built-in R functions are used as far as I can tell.
 
 
-### run_analysis_download_data_first
+### run_analysis_download_data_first.R
 
 Same script as run_analysis.R, but it downloads and extracts data into temporary directory first.
