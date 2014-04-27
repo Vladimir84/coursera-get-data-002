@@ -3,7 +3,7 @@ _____________________
 
 Getting and Cleaning Data Course Project
 
-## run_analysis.R
+### run_analysis.R
 
 Script does the following: 
 * Merges the training and the test sets to create one data set.
@@ -15,6 +15,6 @@ Script does the following:
 This script assumes the Samsung data is extracted in your working directory (so tere's a folder called UCI HAR Dataset/). Only built-in R functions are used as far as I can tell.
 
 
-## run_analysis_download_data_first
+### run_analysis_download_data_first
 
-Same script as run_analysis.R, but it downloads and extracts data first. The script downloads and extracts the data into temporary directory.
+Same script as run_analysis.R, but it downloads and extracts data into temporary directory first.
